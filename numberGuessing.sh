@@ -33,20 +33,21 @@ do
         break
     elif [ $diff -lt 5 ]
     then
-        echo "You are very hot!"
+        temp="very hot!"
     elif [ $diff -lt 10 ]
     then
-        echo "You are hot!"
+        temp="hot!"
     elif [ $diff -lt 25 ]
     then
-        echo "You are warm."
+        temp="warm."
     elif [ $diff -lt 50 ]
     then
-        echo "You are cold."
+        temp="cold."
     elif [ $diff -gt 49 ]
     then
-        echo "You are very cold."
+        temp="very cold."
     fi
+    echo "You are $temp"
     #Increase counter
     counter=$(($counter+1))
     #Checking if the user's number is higher or lower than the random number
