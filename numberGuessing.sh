@@ -52,10 +52,11 @@ do
     #Checking if the user's number is higher or lower than the random number
     if [ $userNum -lt $randomNum ]
     then
-        echo "Try again! The number you guessed is lower than the random number."
+        guessed="lower"
     else
-        echo "Try again! The number you guessed is higher than the random number."
+        guessed="higher"
     fi
+    echo "Try again! The number you guessed is $guessed than the random number."
     #Get user input
     read userNum
 done
