@@ -6,7 +6,7 @@
 #Declaring a random number between 0 and 100
 randomNum=$(($RANDOM % 100))
 
-# echo $randomNum
+echo $randomNum
 
 echo "Welcome to the number guessing game! Start by guessing a number between 0 and 100."
 
@@ -30,7 +30,6 @@ do
     #If the user's number is the same as the random number
     if [ $diff == 0 ]
     then
-        echo "You guessed the correct number $randomNum. Congratulations!"
         break
     elif [ $diff -lt 5 ]
     then
@@ -44,7 +43,7 @@ do
     elif [ $diff -lt 50 ]
     then
         echo "You are cold."
-    elif [ $diff -gt 50 ]
+    elif [ $diff -gt 49 ]
     then
         echo "You are very cold."
     fi
@@ -65,7 +64,7 @@ checkGuessCount="guess"
 if [ $counter != 1 ]
 then
     checkGuessCount="guesses"
-    echo "You guessed the correct number $randomNum. Congratulations!"  
 fi
 
+echo "You guessed the correct number $randomNum. Congratulations!"  
 echo "You guessed the number in $counter $checkGuessCount!"
