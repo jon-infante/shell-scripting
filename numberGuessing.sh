@@ -47,6 +47,7 @@ do
     then
         temp="very cold."
     fi
+    #Temperature print line
     echo "You are $temp"
     #Increase counter
     counter=$(($counter+1))
