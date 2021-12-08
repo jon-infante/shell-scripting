@@ -65,8 +65,7 @@ checkGuessCount="guess"
 if [ $counter != 1 ]
 then
     checkGuessCount="guesses"
-else
-    echo "You guessed the correct number $randomNum. Congratulations!"
+    echo "You guessed the correct number $randomNum. Congratulations!"  
 fi
 
 echo "You guessed the number in $counter $checkGuessCount!"
