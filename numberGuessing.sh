@@ -6,7 +6,7 @@
 #Declaring a random number between 0 and 100
 randomNum=$(($RANDOM % 100))
 
-echo $randomNum
+# echo $randomNum
 
 echo "Welcome to the number guessing game! Start by guessing a number between 0 and 100."
 
