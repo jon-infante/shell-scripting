@@ -25,7 +25,7 @@ do
     diff=$(($randomNum - $userNum))
     if [ $diff -lt 0 ]
     then
-            diff=$(($diff*-1))
+        diff=$(($diff*-1))
     fi
     #If the user's number is the same as the random number
     if [ $diff == 0 ]
