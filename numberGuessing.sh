@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-#Create a number guessing game from 0 to 100 and have a user guess the correct number. Tell the user is
-#they are over or under and how hot and cold they are to the guess. Also include the user's number of guesses.
+#Create a number guessing game from 0 to 100 and have a user guess the correct number. Tell the user if
+#they are over or under and how hot and cold they are on the guess. Also include the user's number of guesses.
 
 #Declaring a random number between 0 and 100
 randomNum=$(($RANDOM % 100))
